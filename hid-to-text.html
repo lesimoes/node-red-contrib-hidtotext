@@ -1,0 +1,33 @@
+<script type="text/javascript">
+
+    RED.nodes.registerType('hid-to-text',{
+        category: 'HIDToText',
+        color: '#a6bbcf',
+        defaults: {
+            name: {value:""},
+            hidDevice: {value:"", required:true, type: "config-hid"},
+        },
+        inputs:1,
+        outputs:1,
+        icon: "file.png",
+        label: function() {
+            return this.name;
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="hid-to-text">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="name">
+    </div>
+    <div class="form-row">
+        <label for="node-input-hidDevice"><i class="icon-tag"></i> HID Device</label>
+        <input type="text" id="node-input-hidDevice" placeholder="Device">
+    </div>
+
+</script>
+
+<script type="text/x-red" data-help-name="hid-to-text">
+    <p>A simple node that converts the message payloads into all lower-case characters</p>
+</script>

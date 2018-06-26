@@ -1,0 +1,29 @@
+<script type="text/javascript">
+    RED.nodes.registerType('config-hid',{
+        category: 'config',
+        defaults: {
+            name: {value: ""},
+            vendorId: {value: "", required:true},
+            productId: {value: "", required:true},
+        },
+        label: function() {
+            return this.name;
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="config-hid">
+    <div class="form-row">
+        <label for="node-config-input-name"><i class="fa "></i> Name</label>
+        <input type="text" id="node-config-input-name" placeholder="USB Device">
+    </div>
+    <div class="form-row">
+        <label for="node-config-input-vendorId"><i class="fa "></i> Vendor Id </label>
+        <input type="text" id="node-config-input-vendorId" placeholder="">
+    </div>
+    <div class="form-row">
+        <label for="node-config-input-productId"><i class="fa "></i> Product Id </label>
+        <input type="text" id="node-config-input-productId" placeholder="">
+    </div>
+
+</script>

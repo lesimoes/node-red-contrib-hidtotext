@@ -1,0 +1,29 @@
+{
+  "name": "red-contrib-hidtotext",
+  "version": "1.0.0",
+  "description": "",
+  "main": "config-hid.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yamidev/node-red-contrib-hidtotext.git"
+  },
+  "node-red" : {
+    "nodes": {
+      "config-hid": "config-hid.js",
+      "hid-to-text": "hid-to-text.js"
+    }
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-hid-stream": "0.0.3",
+    "underscore": "^1.9.1"
+  },
+  "bugs": {
+    "url": "https://github.com/Yamidev/node-red-contrib-hidtotext/issues"
+  },
+  "homepage": "https://github.com/Yamidev/node-red-contrib-hidtotext#readme"
+}
