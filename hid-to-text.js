@@ -34,7 +34,8 @@ module.exports = function(RED) {
         }
 
         _this.on('close', function() {
-            lines.close();
+            if(lines)
+              lines.close();
         });
     }
   
